@@ -1,7 +1,16 @@
 {
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "showdown": "^1.9.1",
-    "socketio": "^1.0.0"
+    "nodemon": "^2.0.12",
+    "socket.io": "4.1.3"
   }
 }
