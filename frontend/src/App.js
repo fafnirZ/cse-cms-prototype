@@ -10,8 +10,8 @@ function App() {
   useEffect(()=> {
     // 
     console.log(socket.connected)
-    socket.on('a', ()=> {
-      console.log('hi');
+    socket.on('send template', (data)=> {
+      console.log(data);
     })
   },[])
   
