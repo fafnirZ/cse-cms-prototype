@@ -26,8 +26,6 @@ const openTemplate = () => {
 
 
 
-
-
 io.on('connection', (socket) => {
     console.log('new connection established');
 
@@ -38,6 +36,17 @@ io.on('connection', (socket) => {
         console.log('connection has been lost')
     })
 });
+
+
+
+
+// normal server
+app.get('/md', (req, res)=> {
+    res.send({'data': openTemplate().split('\n')})
+})
+
+
+
 
 server.listen(port, () => {
     console.log(`app listening at http://localhost:${port}`)
